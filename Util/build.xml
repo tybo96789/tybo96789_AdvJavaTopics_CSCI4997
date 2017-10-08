@@ -1,0 +1,21 @@
+<project name="AtiburcioTyler_Util" default="jar" basedir=".">
+  <path id="classpath">
+    <fileset dir="lib">
+        <include name="**/*.jar" />
+    </fileset>
+  </path>
+  <target name="compile">
+    <mkdir dir="./classes"/>
+    <javac srcdir="src" destdir="classes" includes="**" debug="on">
+      <classpath refid="classpath"/>
+    </javac>
+  </target>
+  <target name="jar" depends="compile">
+    <jar jarfile="AtiburcioTyler_Util.jar" basedir="classes">
+    </jar>
+  </target>
+  <target name="doc" depends="compile">
+    <mkdir dir="./docs"/>
+    <javadoc packagenames="*.*" sourcepath="src" destdir="docs"/>
+  </target>
+</project>
