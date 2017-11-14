@@ -1,0 +1,22 @@
+Homework 8
+Author: Tyler Atiburcio
+
+This program touches on the topics of memory, in this instance of this program the finalize method is overrided to show more information.
+
+Important Notes:
+
+  Required file(s):
+  primes1.txr
+
+  Required Dependences:
+  None
+
+Running the program:
+
+
+  Run the following command to start the application in the default mode of slow:
+    java -jar ./AtiburcioTyler_HW8.jar
+
+  Run one of the following command to start the application in a haste mode:
+    java -jar ./AtiburcioTyler_HW8.jar fast
+    java -jar ./AtiburcioTyler_HW8.jar haste

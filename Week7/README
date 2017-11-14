@@ -1,0 +1,11 @@
+IMPORTANT:
+Please Download the 'AtiburcioTyler_Util.jar' and place into the lib folder. The download link is inside the lib folder
+'AtiburcioTyler_Util.zip' to in the lib folder of this project! If not the program will not run at all.
+
+Step 1: Run the following command to start the RMI server with the projects's classpath
+
+rmiregistry -J-Djava.class.path=./AtiburcioTyler_HW7.jar
+
+Step 2: Run the following command to start the binding and to start the stub GUI
+
+java -jar ./AtiburcioTyler_HW7.jar

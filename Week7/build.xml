@@ -1,0 +1,47 @@
+<!--Author: Tyler ATiburcio-->
+<!--VERSION: 4-->
+<!--CHANGELOG:Fixed jar external lib/ Added more features-->
+<project name="AtiburcioTyler_HW7" default="jar" basedir=".">
+  <path id="classpath">
+    <fileset dir="./lib">
+        <include name="**/*.jar" />
+        <include name="**/*.zip" />
+    </fileset>
+  </path>
+
+  <target name="clean" description="compile the source">
+        <delete dir="./classes" />
+        <mkdir dir="./classes"/>
+    </target>
+    <target name="cleanall" depends="clean">
+      <delete dir="./docs"/>
+      <mkdir dir="./docs"/>
+    </target>
+    <!-- Create the build directory structure used by project -->
+    <target name="init">
+        <mkdir dir="./classes"/>
+        <mkdir dir="./lib"/>
+        <mkdir dir="./docs"/>
+    </target>
+  <target name="compile">
+    <mkdir dir="./classes"/>
+    <javac srcdir="src" destdir="classes" includes="**" debug="on" classpathref="classpath">
+      <classpath refid="classpath"/>
+    </javac>
+  </target>
+  <target name="jar" depends="compile">
+    <manifestclasspath property="jar.classpath" jarfile="./${ant.project.name}.jar">
+          <classpath refid="classpath"/>
+    </manifestclasspath>
+    <jar jarfile="AtiburcioTyler_HW7.jar" basedir="classes">
+      <manifest>
+        <attribute name="Main-Class" value="space.gameressence.atiburcio.tyler.Main"/>
+        <attribute name="Class-Path" value="${jar.classpath}"/>
+      </manifest>
+    </jar>
+  </target>
+  <target name="doc" depends="compile">
+    <mkdir dir="./docs"/>
+    <javadoc packagenames="*.*" sourcepath="src" destdir="docs"/>
+  </target>
+</project>

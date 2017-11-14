@@ -1,0 +1,18 @@
+Homework 9
+Author: Tyler Atiburcio
+
+This program touches on the topics of JNI, which in this instance a method is declared in Java but implemented in C++
+
+Important Notes:
+
+  Required file(s):
+  None
+
+  Required Dependences:
+  c++/libdemo.so
+
+Running the program:
+
+  Dependencey file can be built by running the make file in the c++ folder
+
+  run the following file "run"

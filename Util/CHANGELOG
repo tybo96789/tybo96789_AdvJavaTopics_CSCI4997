@@ -1,0 +1,23 @@
+CHANGELOG
+  Overall changes:
+    Added Change log
+    Revisions to GUITemplate
+
+GUITemplate:
+  version:
+    0.5:
+      Correctly extend JPanel class instead of JFrame class
+      Changed default layout to 'None' to 'Boarder Layout'
+      Added status bar
+      Removed Arraylist of containers
+    0.1:
+      Inital Creation
+
+
+Config:
+  version:
+    2:
+      Fixed typos
+      Implements Serializable
+    1:
+      Inital creation

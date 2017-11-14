@@ -1,0 +1,1 @@
+java -Djava.library.path=c++ -classpath AtiburcioTyler_HW9.jar space.gameressence.atiburcio.tyler.Useful
