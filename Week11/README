@@ -1,0 +1,18 @@
+Homework 11
+Author: Tyler Atiburcio
+
+This program tests the file download functionality using java NIO; This is tested by download the missing library require to run the program
+
+Important Notes:
+
+  Required file(s):
+  None
+
+  Required Dependences:
+  AtiburcioTyler_Util.jar (NOTE: File will automatically download)
+
+
+Running the program:
+
+  run 'ant' to build the program, then run the following command to start the application
+    java -jar ./AtiburcioTyler_HW11.jar

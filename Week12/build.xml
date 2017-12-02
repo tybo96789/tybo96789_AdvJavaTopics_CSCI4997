@@ -1,7 +1,7 @@
 <!--Author: Tyler ATiburcio-->
 <!--VERSION: 5-->
 <!--CHANGELOG:Added src folder to init-->
-<project name="AtiburcioTyler_HW11" default="jar" basedir=".">
+<project name="AtiburcioTyler_HW12" default="jar" basedir=".">
   <path id="classpath">
     <fileset dir="./lib">
         <include name="**/*.jar" />
@@ -34,9 +34,9 @@
     <manifestclasspath property="jar.classpath" jarfile="./${ant.project.name}.jar">
           <classpath refid="classpath"/>
     </manifestclasspath>
-    <jar jarfile="AtiburcioTyler_HW11.jar" basedir="classes">
+    <jar jarfile="AtiburcioTyler_HW12.jar" basedir="classes">
       <manifest>
-        <attribute name="Main-Class" value="space.gameressence.atiburcio.tyler.DownloadTester"/>
+        <attribute name="Main-Class" value="space.gameressence.atiburcio.tyler.ImageLoader"/>
         <attribute name="Class-Path" value="${jar.classpath}"/>
       </manifest>
     </jar>
