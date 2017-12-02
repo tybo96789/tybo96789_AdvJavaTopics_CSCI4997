@@ -1,0 +1,25 @@
+Homework 13
+Author: Tyler Atiburcio
+
+This program will take in a URL as a parameters and it will load the picture on to screen. Program also has a feature where you can load a new image during runtime
+
+Important Notes:
+
+  Required file(s):
+  lib/AtiburcioTyler_Util.jar
+
+  Required Dependences:
+  AtiburcioTyler_Util.jar
+
+  Known Issues:
+  Querying for a new image does not replace the existing photo thats is already in frame
+
+
+Running the program:
+
+  run 'ant' to build the program, then run the following command to start the application
+    java -jar ./AtiburcioTyler_HW11.jar [URL of Photo to download]
+
+  To load a new image enter a URL to a image and hit 'query'  
+
+  NOTE: If no arugment is supplied, a hard coded URL will be shown
